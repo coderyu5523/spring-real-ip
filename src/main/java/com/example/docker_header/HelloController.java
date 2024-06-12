@@ -19,9 +19,8 @@ public class HelloController {
             forwardedFor = request.getHeader("X-Forwarded-For");
         }
 
-        System.out.println("X-Real-IP :" + realIp);
-        System.out.println("X-Forwarded-For :" + forwardedFor);
-        return "ok";
+        return "X-Real-IP: " + realIp + ", X-Forwarded-For: " + forwardedFor;
     }
+
 
 }
