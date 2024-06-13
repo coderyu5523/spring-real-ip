@@ -22,10 +22,10 @@ spring:
     console:
       enabled: true
   # 7 서버 실행시에 data.sql 실행
-  sql:
-    init:
-      data-locations:
-        - classpath:db/data.sql
+#  sql:
+#    init:
+#      data-locations:
+#        - classpath:db/data.sql
   jpa:
     # 8 ddl-auto create 작동 시점을 sql init 보다 빠르게 설정
     defer-datasource-initialization: true
